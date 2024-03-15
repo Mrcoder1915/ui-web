@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="UI.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+ </head>
+ <body>
+   <section class="sec-1">
+    <div class="bg" id="bg">
+        <div class="cube-container">
+             <div class="cube">
+                  <div class="card-cube cube-fronts">UI</div>
+                  <div class="card-cube cube-backs">&#x3c;&#x2216;&#x3e;</div>
+                  <div class="card-cube top">{}</div>
+                  <div class="card-cube right">right</div>
+                  <div class="card-cube left">left</div>
+                  <div class="card-cube bottom">bottom</div>                                   
+             </div>
+        </div>
+    </div>
+   </section>
+      <header>
+         <h3 class="ui">UI</h3>
+          <div class="navigation">
+            <a href="#bg">home</a> 
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+            <a href="">design</a>  
+          </div>
+      </header>
+      <span class="menu-button"><ion-icon name="menu-outline"></ion-icon></span>
+  <div class="toggle">
+      
+       <a href="#bg"> <li>Home</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#contact"><li>Contact</li></a>
+        <a href=""><li>Design</li></a>
+    
+  </div>
+      <section class="sec-2 ">
+      <div class="about" id="about" >
+            <div class="about_text" >
+                <p class="text">We are making a User Interface to all
+                   Web Developer for making their work 
+                   more easier all the user can get all
+                   the html and css code that needed to their 
+                   project all of the design here is free 
+               </p>
+            </div>
+            <div class="about_card">
+            
+                  <div class="box_hover">
+                     <img class="img1" src="car1.jpeg">
+                     <div class="card_blur"> 
+                        <h3 class="ttl">sport car</h3>
+                        <p class="textContent"> Quick acceleration and speed: Sports cars and muscle cars are both known 
+                           for their speed. Where muscle cars focus more on power, sports cars focus on quick acceleration.
+                            Small and compact design: Sports cars are smaller than muscle cars and usually look sleeker.</p>
+                            <button class="buy">buy now</button>
+                     </div>
+                  </div> 
+                  <div class="box_hover second">
+                     <img class="img1" src="img2.webp">
+                     <div class="card_blur2"> 
+                        <h3 class="ttl">USA</h3>
+                        <p class="textContent">You will need either an Electronic System for
+                            Travel Authorisation (ESTA)
+                            visa waiver or a visa to enter or transit the USA as a visitor.</p>
+                            <button class="buy">book now</button>
+                     </div>
+                  </div> 
+                  <div class="box_hover third">
+                     <img class="img1" src="food.webp">
+                     <div class="card_blur3"> 
+                        <h3 class="ttl">resto</h3>
+                        <p class="textContent">we serve a delecious food all over the world</p>
+                            <button class="buy">order now</button>
+                     </div>
+                  </div> 
+                  <div class="cardContainer">
+                      <div class="card">
+                          <div class="front">
+                           <img src="blue.jpg" alt="">
+                          </div>
+                          <div class="back">
+                             <h3>BACK</h3>
+                             <h4>animation rotate</h4>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="cardContainer second">
+                     <div class="card">
+                         <div class="front second">
+                          <img src="red.jpg" alt="">
+                         </div>
+                         <div class="back">
+                            <h3>BACK</h3>
+                            <h4>animation rotate</h4>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="cardContainer third">
+                  <div class="card">
+                      <div class="front third">
+                       <img src="drag3.jpeg" alt="">
+                      </div>
+                      <div class="back">
+                         <h3>BACK</h3>
+                         <h4>animation rotate</h4>
+                      </div>
+                  </div>
+              </div>
+            </div>
+       </div>
+      </section>
+      <section class="sec-3">
+            <div class="contact " id="contact">
+                <div class="contacts">
+                    <h2>Contact Us!</h2>
+                      <form  action="#">
+                          <div class="input-box">
+                               <div class="input-field field">
+                                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                                    <div class="error-txt">Name can't be blank</div>
+                               </div>
+                               <div class="input-field field">
+                                 <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off" autocapitalize="off">
+                                 <div class="error-txt err">Email can't be blank</div>
+                               </div>
+                          </div>
+                          <!-- second input-box -->
+                          <div class="input-box">
+                             <div class="input-field field">
+                                 <input type="text" placeholder="phone number" id="phone" class="item" autocomplete="off">
+                                 <div class="error-txt">Phone number can't be blank</div>
+                             </div>
+                                 <div class="input-field field">
+                                 <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" autocapitalize="off">
+                                 <div class="error-txt">Subject can't be blank</div>
+                             </div>
+                          </div>
+                          
+                             <div class="textarea-field field">
+                                 <textarea name="" rows="10" id="message"  class="item" placeholder="message!"></textarea>
+                                 <div class="error-txt">Message can't be blank</div>
+                             </div>
+                           <button class="btnemail" type="submit">Send message</button>
+                           
+                      </form>
+                </div>
+                         <!-- login and register form -->
+                         <div class="loginContainer">
+                             <div class="rotate">
+                            <div class="fronts">
+                              <div class="login-boxs">
+                                  <h2 class="login">login</h2>
+                                     <form action="#" >
+                                          <div class="input-boxs">
+                                               <span></span>
+                                               <input type="email" placeholder="email">
+                                               
+                                          </div>
+                                          <div class="input-boxs">
+                                               <span></span>
+                                               <input type="password" placeholder="password">
+                                               
+                                          </div>
+                                          <div class="remember-forget" >
+                                            <label><input class="cb" onclick="check" type="checkbox">remember me</label>
+                                            <a onclick="return false" href="#">forgot password</a>
+                                       </div>
+                                        
+                                       <button onclick="return false" class="btn-login">login</button>
+                                       <div class="register-link">
+                                           <p >dont have an account <a href="#" onclick="return false
+                                           ;"> register</a></p>
+                                       </div>
+                                    </form>
+                                    </div>
+                              </div>
+                                 <div class="backs">
+                              <div class="login-boxs">
+                                <h2 class="login">register</h2>
+                                    <form action="#">
+                                        <div class="input-boxs">
+                                             <span></span>
+                                             <input type="text" placeholder="Username">
+                                             
+                                        </div>
+                                        <div class="input-boxs">
+                                             <span></span>
+                                             <input type="email" placeholder="email">
+                                             
+                                        </div>
+                                        <div class="input-boxs">
+                                             <span></span>
+                                             <input type="password" placeholder="password">
+                                        </div>
+
+                                        <div class="remember-forget">
+                                            <p><input type="checkbox">remember me</p>
+                                            <a href="#"  onclick="return false">forgot password</a>
+                                       </div>
+                                        
+                                       <button  onclick="return false" class="btn-login">Submit</button>
+                                       <div class="register-link login-link">
+                                           <p >already have an account? <a href="#" onclick="return false
+                                           ;"> login</a></p>
+                                       </div>
+                                    </form>  
+                                   
+
+                            </div>
+                        </div>
+                    </div>
+                         </div>
+            </div>
+            
+      </section>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+       <script src="UI.js"></script>
+ </body>
+</html>
