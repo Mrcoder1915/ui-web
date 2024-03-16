@@ -125,3 +125,35 @@ menuButtom.onclick = () => {
 $(document).ready(function(){
     $(".navigation,.menu-button,.ui").addClass("animate__animated animate__bounce");
 });
+// this for typewriting
+function sleep(ms){
+    return new Promise((resolve) => setTimeout(resolve,ms));
+};
+const words = ["HTML","CSS","JAVASCRIPT"];
+const typing = document.querySelector('.typing');
+let sleeptime = 100;
+let curphraseindex = 0;
+
+const writeloop = async () => {
+    while(true){
+        let curword = words[curphraseindex];
+        for(let i = 0;i < curword.length;i++){
+            typing.innerText = curword.substring(0,i+1);
+            await sleep(sleeptime);
+        }
+        await sleep(sleeptime * 10);
+
+        for(let i = curword.length;i > 0;i--){
+            typing.innerText = curword.substring(0,i-1);
+            await sleep(sleeptime);
+    }
+    await sleep(sleeptime * 5);
+   
+    if(curphraseindex === words.length - 1){
+        curphraseindex = 0;
+    }else{
+        curphraseindex++;
+    }
+};
+}
+writeloop();
