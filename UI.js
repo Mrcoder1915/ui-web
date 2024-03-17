@@ -127,7 +127,9 @@ $(document).ready(function(){
 });
 // this for typewriting
 function sleep(ms){
-    return new Promise((resolve) => setTimeout(resolve,ms));
+    return new Promise((resolve) => { 
+        setTimeout(resolve,ms)
+    });
 };
 const words = ["HTML","CSS","JAVASCRIPT"];
 const typing = document.querySelector('.typing');
@@ -137,17 +139,17 @@ let curphraseindex = 0;
 const writeloop = async () => {
     while(true){
         let curword = words[curphraseindex];
-        for(let i = 0;i < curword.length;i++){
-            typing.innerText = curword.substring(0,i+1);
+        for(let i = 0;i <= curword.length;i++){
+            typing.innerText = curword.substring(0,i);
             await sleep(sleeptime);
         }
         await sleep(sleeptime * 10);
 
-        for(let i = curword.length;i > 0;i--){
-            typing.innerText = curword.substring(0,i-1);
+        for(let i = curword.length;i >= 0;i--){
+            typing.innerText = curword.substring(0,i);
             await sleep(sleeptime);
     }
-    await sleep(sleeptime * 5);
+        await sleep(sleeptime * 5);
    
     if(curphraseindex === words.length - 1){
         curphraseindex = 0;
@@ -155,5 +157,5 @@ const writeloop = async () => {
         curphraseindex++;
     }
 };
-}
+};
 writeloop();
